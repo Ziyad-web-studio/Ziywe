@@ -67,7 +67,7 @@ function renderProducts() {
         const card = document.createElement('div');
         card.className = 'product-card';
         card.innerHTML = `
-            <img src="${product.preview}" alt="${product.title}" class="product-image" onclick="openModal('${product.preview}')">
+            <img src="${product.preview}" alt="${product.title}" class="product-image">
             <div class="product-info">
                 <div class="product-header">
                     <h3 class="product-title">${product.title}</h3>
@@ -116,68 +116,8 @@ function initFAQ() {
     });
 }
 
-// Image Preview Modal Logic
-const modal = document.getElementById('image-modal');
-const modalImg = document.getElementById('modal-img');
-const closeModalBtn = document.querySelector('.close-modal');
-
-// Expose openModal to global scope because it's called from inline HTML
-window.openModal = function(src) {
-    modal.style.display = 'flex'; // Set display first for layout
-    modalImg.src = src;
-    // Small timeout to allow transition
-    setTimeout(() => {
-        modal.classList.add('show');
-    }, 10);
-}
-
-function closeModal() {
-    modal.classList.remove('show');
-    setTimeout(() => {
-        modal.style.display = 'none';
-        modalImg.src = '';
-    }, 300); // Wait for transition
-}
-
-if (closeModalBtn) {
-    closeModalBtn.addEventListener('click', closeModal);
-}
-
-// Close when clicking outside image
-if (modal) {
-    modal.addEventListener('click', (e) => {
-        if (e.target === modal) {
-            closeModal();
-        }
-    });
-}
-
-// Theme Toggle Logic
-function initTheme() {
-    const themeToggleBtn = document.getElementById('theme-toggle');
-    const body = document.body;
-
-    // Check saved theme
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'light') {
-        body.classList.add('light-theme');
-    }
-
-    themeToggleBtn.addEventListener('click', () => {
-        body.classList.toggle('light-theme');
-
-        // Save preference
-        if (body.classList.contains('light-theme')) {
-            localStorage.setItem('theme', 'light');
-        } else {
-            localStorage.setItem('theme', 'dark');
-        }
-    });
-}
-
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
     renderProducts();
     initFAQ();
-    initTheme();
 });
