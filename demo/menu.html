@@ -1,99 +1,105 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Menu - Terra Brew</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Lestari Kopi</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <header class="header">
-    <div class="container nav-container">
-      <a href="index.html" class="logo">Terra Brew.</a>
-      <button id="navToggle" class="nav-toggle" aria-label="Menu">
-        &#9776;
-      </button>
-      <nav id="navMenu" class="nav-menu">
-        <a href="index.html" class="nav-link">Beranda</a>
-        <a href="menu.html" class="nav-link active">Menu Kami</a>
-        <a href="contact.html" class="nav-link">Lokasi & Kontak</a>
-      </nav>
-    </div>
-  </header>
+    <header class="header">
+        <div class="container nav-flex">
+            <a href="index.html" class="logo">Lestari Kopi.</a>
+            <button id="navToggle" class="nav-toggle" aria-label="Buka Menu">&#9776;</button>
+            <nav id="navMenu" class="nav-menu">
+                <a href="index.html" class="nav-link">Beranda</a>
+                <a href="menu.html" class="nav-link active">Menu Kami</a>
+                <a href="contact.html" class="nav-link">Kontak</a>
+            </nav>
+        </div>
+    </header>
 
-  <section class="section">
-    <div class="container">
-      <div class="text-center mb-lg">
-        <h1>Menu Favorit</h1>
-        <p style="color: var(--text-muted);">Racikan spesial untuk menemani harimu.</p>
-      </div>
+    <section class="section">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 3rem;">
+                <h1>Menu Favorit</h1>
+                <p>Pilihan terbaik untuk menemani harimu.</p>
+            </div>
 
-      <h2 class="mb-md" style="border-bottom: 2px solid var(--border); padding-bottom: 0.5rem;">Signature Coffee</h2>
-      <div class="menu-grid mb-lg">
-        <!-- Item 1 -->
-        <article class="menu-card">
-          <img src="assets/images/menu1.webp" alt="Terra Latte" class="menu-img">
-          <div class="menu-info">
-            <h3>Terra Latte</h3>
-            <p class="text-muted">Espresso, susu segar, dan sirup aren organik.</p>
-            <span class="menu-price">Rp 28.000</span>
-          </div>
-        </article>
+            <!-- Kopi -->
+            <h2 style="border-bottom: 2px solid #ddd; padding-bottom: 0.5rem; margin-bottom: 2rem;">Kopi Spesial</h2>
+            <div class="grid">
+                <!-- Item 1 -->
+                <article class="card">
+                    <img src="assets/images/kopi1.webp" alt="Kopi Susu Gula Aren" class="card-img">
+                    <div class="card-body">
+                        <h3>Kopi Susu Gula Aren</h3>
+                        <p style="color: #666; font-size: 0.9rem;">Espresso house blend dengan susu segar dan gula aren organik.</p>
+                        <span class="card-price">Rp 25.000</span>
+                        <button class="btn btn-primary btn-order" style="width: 100%; margin-top: 1rem;">Pesan</button>
+                    </div>
+                </article>
 
-        <!-- Item 2 -->
-        <article class="menu-card">
-          <img src="assets/images/menu2.webp" alt="Cappuccino" class="menu-img">
-          <div class="menu-info">
-            <h3>Classic Cappuccino</h3>
-            <p class="text-muted">Foam tebal yang creamy dengan taburan coklat.</p>
-            <span class="menu-price">Rp 30.000</span>
-          </div>
-        </article>
+                <!-- Item 2 -->
+                <article class="card">
+                    <img src="assets/images/kopi2.webp" alt="Americano" class="card-img">
+                    <div class="card-body">
+                        <h3>Lestari Americano</h3>
+                        <p style="color: #666; font-size: 0.9rem;">Kopi hitam klasik dengan biji pilihan Single Origin.</p>
+                        <span class="card-price">Rp 22.000</span>
+                        <button class="btn btn-primary btn-order" style="width: 100%; margin-top: 1rem;">Pesan</button>
+                    </div>
+                </article>
 
-        <!-- Item 3 -->
-        <article class="menu-card">
-          <img src="assets/images/menu3.webp" alt="Cold Brew" class="menu-img">
-          <div class="menu-info">
-            <h3>Citrus Cold Brew</h3>
-            <p class="text-muted">Seduhan dingin 12 jam dengan sentuhan lemon segar.</p>
-            <span class="menu-price">Rp 32.000</span>
-          </div>
-        </article>
-      </div>
+                <!-- Item 3 -->
+                <article class="card">
+                    <img src="assets/images/kopi3.webp" alt="Cappuccino" class="card-img">
+                    <div class="card-body">
+                        <h3>Classic Cappuccino</h3>
+                        <p style="color: #666; font-size: 0.9rem;">Keseimbangan sempurna antara espresso, susu, dan foam.</p>
+                        <span class="card-price">Rp 28.000</span>
+                        <button class="btn btn-primary btn-order" style="width: 100%; margin-top: 1rem;">Pesan</button>
+                    </div>
+                </article>
+            </div>
 
-      <h2 class="mb-md" style="border-bottom: 2px solid var(--border); padding-bottom: 0.5rem;">Non-Coffee & Pastry</h2>
-      <div class="menu-grid">
-        <!-- Item 4 -->
-        <article class="menu-card">
-          <img src="assets/images/menu4.webp" alt="Matcha" class="menu-img">
-          <div class="menu-info">
-            <h3>Kyoto Matcha</h3>
-            <p class="text-muted">Matcha premium Jepang dengan susu oat.</p>
-            <span class="menu-price">Rp 35.000</span>
-          </div>
-        </article>
+            <!-- Non Kopi -->
+            <h2 style="border-bottom: 2px solid #ddd; padding-bottom: 0.5rem; margin-bottom: 2rem; margin-top: 4rem;">Non Kopi & Cemilan</h2>
+            <div class="grid">
+                <!-- Item 4 -->
+                <article class="card">
+                    <img src="assets/images/matcha.webp" alt="Matcha Latte" class="card-img">
+                    <div class="card-body">
+                        <h3>Matcha Latte</h3>
+                        <p style="color: #666; font-size: 0.9rem;">Teh hijau Jepang premium diseduh dengan susu creamy.</p>
+                        <span class="card-price">Rp 30.000</span>
+                        <button class="btn btn-primary btn-order" style="width: 100%; margin-top: 1rem;">Pesan</button>
+                    </div>
+                </article>
 
-        <!-- Item 5 -->
-        <article class="menu-card">
-          <img src="assets/images/menu5.webp" alt="Croissant" class="menu-img">
-          <div class="menu-info">
-            <h3>Butter Croissant</h3>
-            <p class="text-muted">Renyah, buttery, dan dipanggang setiap pagi.</p>
-            <span class="menu-price">Rp 22.000</span>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
+                <!-- Item 5 -->
+                <article class="card">
+                    <img src="assets/images/croissant.webp" alt="Croissant" class="card-img">
+                    <div class="card-body">
+                        <h3>Butter Croissant</h3>
+                        <p style="color: #666; font-size: 0.9rem;">Pastry renyah dan gurih, dipanggang setiap pagi.</p>
+                        <span class="card-price">Rp 20.000</span>
+                        <button class="btn btn-primary btn-order" style="width: 100%; margin-top: 1rem;">Pesan</button>
+                    </div>
+                </article>
+            </div>
 
-  <footer style="background: #2D2A26; color: white; padding: 3rem 0; margin-top: auto;">
-    <div class="container text-center">
-      <p>&copy; 2024 Terra Brew Coffee. All rights reserved.</p>
-    </div>
-  </footer>
+        </div>
+    </section>
 
-  <script src="js/script.js"></script>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Lestari Kopi. Dibuat dengan cinta untuk penikmat kopi.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
