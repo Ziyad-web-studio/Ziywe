@@ -1,37 +1,39 @@
-# Terra Brew Template
+# Lestari Kopi - Website Demo
 
-Template website statis untuk coffee shop modern dengan desain minimalis dan tone warna bumi (earthy).
+Project website sederhana untuk coffeeshop "Lestari Kopi" dengan tema natural dan modern. Project ini dibuat menggunakan HTML, CSS, dan Vanilla JavaScript tanpa framework eksternal.
 
-## Struktur Folder
+## Struktur Project
+
+Semua file berada di dalam folder `/demo/`.
 
 ```
 /demo
-  /assets
-    /images  (Placeholder path)
-  /css
-    styles.css
-  /js
-    script.js
-  index.html
-  menu.html
-  contact.html
-  README.md
-  styleguide.md
+  /assets/
+    /images/  (Placeholder untuk gambar produk)
+  /css/
+    styles.css (Style utama dengan CSS Variables)
+  /js/
+    script.js (Interaksi menu dan modal)
+  index.html (Halaman Utama)
+  menu.html (Daftar Menu)
+  contact.html (Halaman Kontak)
+  styleguide.md (Panduan Desain)
 ```
+
+## Cara Menjalankan
+
+1. Buka folder ini di VS Code.
+2. Install ekstensi "Live Server" jika belum ada.
+3. Klik kanan pada `index.html` dan pilih "Open with Live Server".
+4. Website akan terbuka di browser default Anda.
 
 ## Fitur
 
-- **Responsif:** Mobile-first design yang menyesuaikan tampilan dari HP hingga Desktop.
-- **Ringan:** Vanilla CSS dan JavaScript tanpa framework berat.
-- **Modern UI:** Menggunakan CSS Variables, Flexbox, dan Grid.
-- **Bahasa:** Konten user-facing menggunakan Bahasa Indonesia.
-
-## Cara Menggunakan
-
-1. Buka folder `/demo` di VS Code.
-2. Gunakan Live Server untuk menjalankan `index.html`.
-3. Ganti gambar di folder `assets/images` sesuai kebutuhan.
+- **Mobile First Design:** Tampilan responsif yang optimal di HP, Tablet, dan Desktop.
+- **Hamburger Menu:** Navigasi yang rapi di layar kecil.
+- **CSS Variables:** Pengaturan warna dan font terpusat.
+- **Form UI:** Tampilan form kontak yang bersih.
 
 ## Lisensi
 
-Free untuk penggunaan personal dan komersial.
+Free untuk digunakan dan dimodifikasi.
