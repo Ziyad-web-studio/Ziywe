@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak - Terra Brew</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Terra Brew.</a>
+      <button id="navToggle" class="nav-toggle" aria-label="Menu">
+        &#9776;
+      </button>
+      <nav id="navMenu" class="nav-menu">
+        <a href="index.html" class="nav-link">Beranda</a>
+        <a href="menu.html" class="nav-link">Menu Kami</a>
+        <a href="contact.html" class="nav-link active">Lokasi & Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="text-center mb-lg">
+        <h1>Temukan Kami</h1>
+        <p class="text-muted">Kami menantikan kedatangan Anda.</p>
+      </div>
+
+      <div class="menu-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+        <!-- Contact Info -->
+        <div>
+          <h2 class="mb-md">Informasi</h2>
+          <div class="mb-md">
+            <h3>Alamat</h3>
+            <p class="text-muted">Jl. Bumi Damai No. 88<br>Jakarta Selatan, 12345</p>
+          </div>
+          <div class="mb-md">
+            <h3>Jam Buka</h3>
+            <p class="text-muted">Senin - Jumat: 07:00 - 22:00<br>Sabtu - Minggu: 08:00 - 23:00</p>
+          </div>
+          <div>
+            <h3>Kontak</h3>
+            <p class="text-muted">Email: halo@terrabrew.com<br>WhatsApp: +62 812 3456 7890</p>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div style="background: white; padding: 2rem; border-radius: var(--radius); box-shadow: var(--shadow);">
+          <h2 class="mb-md">Kirim Pesan</h2>
+          <form>
+            <div class="form-group">
+              <label for="name" class="form-label">Nama</label>
+              <input type="text" id="name" class="form-control" placeholder="Nama Anda">
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" id="email" class="form-control" placeholder="email@contoh.com">
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Pesan</label>
+              <textarea id="message" rows="4" class="form-control" placeholder="Tulis pesan Anda..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Kirim</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer style="background: #2D2A26; color: white; padding: 3rem 0; margin-top: auto;">
+    <div class="container text-center">
+      <p>&copy; 2024 Terra Brew Coffee. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
